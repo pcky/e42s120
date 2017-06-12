@@ -1,0 +1,14 @@
+Known bugs and restrictions of Emu42 V1.20
+------------------------------------------
+
+- the following I/O bits aren't emulated
+  DSPTEST (0x302) [VDIG LID CLTM1 CLTM0]
+  DSPCTL  (0x303) [SDAT BIN]
+  LPD     (0x308) [VRAM]
+  LPE     (0x309) [EVRAM RST]
+  RAMTST  (0x30B) [PLEV XTRA DDP DPC]
+  INPORT  (0x30C) [RX SREQ ST1 ST0]
+  LEDOUT  (0x30D) [UREG EPD DRL]
+- Register and Display/Timer MMU configuration isn't separated
+
+07/19/16 (c) by Christoph Gieﬂelink
